@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>CSS Snipped Cheatsheet</title>
 </head>
+
 <header>
     <h1>CSS Snipped Cheatsheet</h1>
     <p>
@@ -17,13 +18,10 @@
 </header>
 <body>
     <div>
-        <section>
-            <article>
-                <H2>Flexbox Row</H2>
-                <p>
-                    Use these tree properties to create
-                    a Flexbox row layout.
-                </p>
+        <section class="cards">
+            <header class="cardtop">Flexbox Row</header>
+                <H2>Use these tree properties to create
+                    a Flexbox row layout.</H2>
                 <p>
                     .row{
                         display: flex;
@@ -31,25 +29,22 @@
                         flex-wrap: wrap;
                     }
                 </p>
-            </article>
-            <article>
-                <H2>Flexbox Column</H2>
-                <p>
-                    Use this to create a Flexbox column
-                    layout.
-                </p>
+        </section>
+        <section class="cards">
+            <header class="cardtop">Flexbox Column</header>
+                <h2>Use this to create a Flexbox column
+                    layout.</h2>
                 <p>
                     .column {
                         display: flex;
                         flex-direction: column;
                     }
                 </p>
-            </article>
-            <article>
-                <H2>CSS Grid Layout</H2>
-                <p>
-                    Build a 12 column layout using CSS Grid.
-                </p>
+        </section>
+        <section class="cards">
+                <header class="cardtop">CSS Grid Layout</header>
+                <h2>Build a 12 column layout using CSS Grid.
+                </h2>
                 <p>
                     .grid{
                         display: grid;
@@ -57,13 +52,13 @@
                         grid-template-columns: repeat(12. 1fr)
                     }
                 </p>
-            </article>
-            <article>
-                <H2>Linear Gradients</H2>
-                <p>
+        </section>
+        <section class="cards">
+                <header class="cardtop">Linear Gradients</header>
+                <h2>
                     This will create a background linear Gradients
                     from top to bottom.
-                </p>
+                </h2>
                 <p>
                     .linear-gradient-background {
                         background-image: linear-gradient{
@@ -72,28 +67,42 @@
                         }
                     }
                 </p>
-            </article>
-            <article>
-                <H2>Box Transition Glow</H2>
-                <p>
-
-                </p>
-                <p>
-                    
-                </p>
-            </article>
-            <article>
-                <H2>Overlay Card with Title</H2>
-                <p>
-
-                </p>
-                <p>
-                    
-                </p>
-            </article>
         </section>
-   </div>
- 
+        <section class="cards">
+                <header class="cardtop">Box Transition Glow</header>
+                <h2>
+                    Use transition and box shadows to Glow
+                    and Hover.
+                </h2>
+                <p>
+                    .code-car .card-header{
+                        border-radius: 8px;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    .code-card:hover,
+                    .code-card:hover .card-header{
+                        box-shadow: inset 0px 0px 8px
+                        rgba(232, 102, 236, 1). 0 0 15px
+                        rgba(232, 102, 236, 1);
+                    }
+                </p>
+        </section>
+        <section class="cards">
+                <header class="cardtop">Overlay Card with Title</header>
+                <h2>
+                    Use position properties and negative margins to
+                    raise elements higher than their natural starting 
+                    point.
+                </h2>
+                <p>
+                     .card-header{
+                        position: relative;
+                        margin-top: -20px
+                     }
+                </p>
+        </section>
+        
+    </div>
 </body>
 <footer>
 <h3>Made with U+2764 and CSS </h3>

@@ -1,0 +1,33 @@
+:root{
+    --text1:rgb(160, 12, 160);
+    --text2:white;
+}
+*{
+    background: rgb(157, 154, 158);
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+}
+h1,header,h3, h2{
+color: var(--text1);
+}
+.cardtop{
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;  
+}
+p{
+    color: var(--text2);
+
+}
+.cards{
+  flex: 1 0 200px;
+  padding: 10px;
+  text-align: center;
+  border-style:dashed;
+  border-width: 1px;
+  margin: 10px;
+}
